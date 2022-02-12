@@ -28,25 +28,22 @@ The docuements from the training data has to be preprocessed and vectorized to b
 The machine learning models used in this project were algorithmic classifiers from sklearn, neural networks built from Keras, and ensemble classifiers from sklearn. Oversampling was also explored.
 Once the model accuracy is suffieciently high, the goal is to use the models to evalaute the themes in the unlabeled Federalist Papers and perhaps other works from that time.
 For more information on this project, please look at the project poster (project_Poster.pdf) found in this folder or contact the author of this file.
+Note- this is an abridged verison of the folder. Not everything could be included and uploaded to Github due to file size limits. Please contact the author if you wish to obtain 
+the entire and complete REU_2021_Project folder
 
 Operating Instructions:
 All of this code for this project was written in Python.
 To run any of the code, simply run the Python files in your preferred environment.
-To use any of the models, they must be loaded into your Python environment and run.
+To use any of the models, they must be loaded into your Python environment and run. The models could not be included because some of them were too big for Github.
 To view or edit any of the data, simply use your preferred text editor.
 
 Acknowledgements:
 I want to thank my mentor Dr. Randall Cone (Department of Mathematical Sciences at Salisbury University) for all of his guidance.
 This work was funded by NSF CCF-1757017 for the Explore Emerging Computing in Science and Engineering (EXERCISE) Reasearch Experience for Undergraduates (REU) at Salisbury University.
 
-File Manifest and Description (all folders and files found within REU_Project):
+File Manifest and Description (all folders and files found within REU_2021_Project):
 ***a brief description of each file and folder follows the name after the dash (-)
 example: fileName - file information***
-Class_Models - folder containing the saved algorithic classifier models
-  linearsvc.sav - the saved LinearSVC model
-  logreg.sav - the saved Logistic Regression model
-  multiNB.sav - the saved Multinomial Niave Bayes model
-  randForest.sav - the saved RandomForestClassifier model
 Code - folder containing all the Python code used in this project
   analyticTool.py - makes or edits csv files to be analyzed by the models (for unlabeled data)
   beginning.py - very first effort of the project; explores preprocessing, tokenization, and finding simple statistics of a text
@@ -65,33 +62,6 @@ Code - folder containing all the Python code used in this project
   playingWithTopicModelling.py - incomplete code; saved and might come back to that strategy of topic modelling later
   topicModRough.py - exploring topic modelling with a single essay
   visualization.py - contains different ways to visualize data (training dataset, results, analytic results, etc)
-glove.6B - Global Vectors for Word Representation; from Stanford; needed for model6.py; will not be describing each file
-  glove.6B.50d.txt
-  glove.6B.100d.txt
-  glove.6B.200d.txt
-  glove.6B.300d.txt
-Graphs_and_Charts - contains pictures of graphs and charts made with Plotly
-  paperPie.png - shows distribution of the number of documents from each essay in the training data
-  stackedbarLegendClose.png - shows stacked bar graph of distrubution of theme in each paper with the legend on the left within the graph
-  stackedbarLegendOutside.png - shows stacked bar graph of distrubution of theme in each paper with the legend on the right outside of the graph
-  stackedBarTotal.png - first draft of file above
-  themePie.png - shows the distribution of themes in the training data
-  totalSunburst.png - a sunburst plot showing the themes in each essays
-NN_Models - folder containing the saved neural network models
-  model1.hdf5 - contains model from model3.py
-  model2.hdf5 - contains model from model4n.py
-  model3.hdf5 - contains model from model5.py
-  model4.hdf5 - contains model from model6.py but the one with normal word embeddings
-  model5.hdf5 - contains model from model6.py but the one with glove word embeddings
-  model6.hdf5 - contains model from model7.py
-papers - folder containing journal articles I found helpful for this project; will not be describing them as the title and abstract within the file both provide adequate descriptions
-  A_Concise_Guide_to_the_Federalist_Papers_a_a_Source_of_the_Origi.pdf
-  A_Method_for_Constructing_Supervised_Topic_Model_based_on_TF-ITF.pdf
-  Bi-LSTM_Model_to_Increase_Acc_in_text_Class.pdf
-  Dealing_with_Data_Imbalance_in_text_class.pdf
-  Neural_Net_Approach_for_text_class_using_relevance_fator_as_term_weighing_method.pdf
-  The_Order_of_Things_A_Study_on_Topic_Modelling_of_Literary_texts.pdf
-  Thematic_Analysis_and_Visualization_of_textual_corpus.pdf
 Raw_Data_Essays - folder containing each individual Federalist Paper essay; I will not describe each file (there's 85) but a simple Google search of the file names will lead you to information about that essay
   FEDERALIST No. 1.txt
   FEDERALIST No. 2.txt
@@ -178,18 +148,11 @@ Raw_Data_Essays - folder containing each individual Federalist Paper essay; I wi
   FEDERALIST No. 83.txt
   FEDERALIST No. 84.txt
   FEDERALIST No. 85.txt
-  FedPapersOnlyEssays.txt - the file that houses all the essays together; was the source for the rest of the files in this folder
-analyzeLinearSVC - csv file containing the labels (themes) for Federalist Paper 55 predicted by the LinearSVC model trained on the original dataset
-analyzeRandFor - csv file containing the labels (themes) for Federalist Paper 55 predicted by the RandomForestClassifier model trained on the SMOTE training dataset 
+  FedPapersOnlyEssays.txt - the file that houses all the essays together; was the source for the rest of the files in this folder 
 project_Poster.pdf - poster for this project that provides all of the main details; an extension for the project description section
 README - this current file providing the introductory information for this project folder
 results - a file used to evalaute the results/accuracy of the model; essentially a note/scrap page
-scrap2.txt - a scrap text file
-sunBurstData - a csv file specifcally for constructing a sunburst plot; add to it in visualization.py
-The_Federalist_Papers_from_ProjGuten.txt - raw data straight from Project Gutenberg
-Tokenize.ipynb - code from the very beginning of the project; not important 
 trainData - csv file containing the training data for the models
-visData1 - csv file used to create the visualizations
 
 Known Bugs:
 model8.py does not work as there is a value error.
